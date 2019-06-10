@@ -1,0 +1,461 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font: 12px/1.6 "Hiragino Sans GB",STHeiti,"微软雅黑","Microsoft YaHei",Helvetica,Arial,serif;
+}
+a{text-decoration: none;}
+.clearfix::after,.clearfix::before{
+	content:"";
+	display: table;
+}
+.clearfix::after{
+	clear: both;
+}
+li{
+	list-style-type: none;
+}
+.top_bar{
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	background: #333;
+	color: #999;
+	position: fixed;
+	z-index: 333;
+}
+.top_bar ul.bar-left{
+	height: 40px;
+	float: left;
+}
+.top_bar ul.bar-left li{
+	float: left;
+	list-style-type: none;
+	margin-right: 10px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	padding: 0 8px;
+}
+.top_bar ul.bar-left a{
+	text-decoration: none;
+	color: #ccc;
+	display: block;
+	font-size: 14px;
+	height: 40px;
+}
+
+.top_bar ul.bar-left a.top_bar_logo i{
+	font-style: normal;
+	width: 55px;
+	display: block;
+	height: 14px;
+	float: left;
+	margin: 13px 10px 0 0 ;
+	text-indent: -9999em;
+	background: url(https://static.meishichina.com/v6/img/lib/top-bar110.png) no-repeat scroll 0 0/55px auto;
+}
+.top_bar ul.bar-left a:hover{
+	color:#fff;
+	background: black;
+}
+.top_bar li.top_bar_more i{
+	display: block;
+	border: 4px dashed transparent;
+	border-top: 6px solid #CCCCCC;
+	margin: 18px auto 0;
+	overflow: hidden;
+    width: 0;
+    height: 0;
+} 
+.top_bar ul.bar-left li:hover{
+	cursor: pointer;
+	background: #000000;
+}
+.top_bar ul.bar-left li.top_bar_more{
+	width: 30px;
+	height: 40px;
+	position: relative;
+}
+.top_bar li.top_bar_more .put_bottom{
+	top: 40px;
+    right: 0;
+	display: none;
+	position: absolute;
+	
+}
+.top_bar li.top_bar_more .put_bottom a{
+	width: 66px;
+	height: 40px;
+	background:#333 ;
+}
+.top_bar li.top_bar_more .put_bottom a:hover{
+	background: #000000;
+}
+.top_bar li.top_bar_more:hover div.put_bottom{
+	display: block;
+}
+.top_bar .nr3 div.nr3_img{
+	width: 60px;
+	height: 40px;
+	float: right;
+	background: #FE5761;
+}
+.top_bar .nr3 div.nr3_img img,.top_bar_user img{
+	width: 18px;
+	height: 18px;
+	display: block;
+    margin: 2px auto;
+}
+.top_bar .nr3 div.nr3_img span{
+	display: block;
+    width: 36px;
+    height: 18px;
+    line-height: 18px;
+    padding: 0 13px;
+    color: #FFFFFF;
+}
+.top_bar .nr3 div.nr3_img div.two_code{
+	position: absolute;
+	right: 10px;
+	top: 40px;
+	display: none;
+}
+.top_bar .nr3 div.nr3_img div.two_code img{
+	width: 100px;
+	height: 100px;
+	
+}
+.top_bar .nr3 div.nr3_img:hover div.two_code{
+	display: block;
+}
+.top_bar .top_bar_user{
+	width: 270px;
+	height: 40px;
+	line-height: 40px;
+	float: right;
+}
+.top_bar .top_bar_user ul li{
+	float: left;
+	width: 50px;
+	height: 40px;
+	line-height: 40px;
+	list-style-type: none;
+}
+.top_bar_user .top_bar_good{
+	 background: #FFA859;
+	 padding: 0 5px;
+}
+.top_bar_user .top_bar_good1{
+	background: #59C3D1;
+	 padding: 0 5px;
+	 position: relative;
+}
+.top_bar_user .top_bar_good1 div.put_info{
+	position: absolute;
+	top: 40px;
+	right: 0;
+	display: none;
+}
+.top_bar_user .top_bar_good1 div.put_info a{
+	width: 60px;
+	height: 40px;
+	display: block;
+	text-decoration: none;
+	color: #FFFFFF;
+	background:#59C3D1 ;
+}
+.top_bar_user .top_bar_word{
+	font-size: 14px;
+	
+}
+.top_bar_user .top_bar_word a{
+	text-decoration: none;
+	color: #CCCCCC;
+}
+.top_bar_user .top_bar_word:hover{
+	color: white;
+	background: #000000;
+}
+.top_bar_user span{
+	display: block;
+    width: 50px;
+    height: 18px;
+    line-height: 18px;
+    color: #FFFFFF;
+}
+.top_bar_user .top_bar_good2{
+	width: 60px;
+	height: 40px;
+	padding: 0 5px;
+    margin-right: 0px;
+    margin-left: -10px;
+}
+.top_bar_user .top_bar_good2 a{
+	text-decoration: none;
+}
+.top_bar_good2 .put_info2 span{
+	padding-left: 4px;
+}
+.top_bar_good2 .put_info2 a.weibo{
+	background-color:rgb(88,87,87);
+	width: 60px;
+	height: 40px;
+	display: block;
+	margin-top: -2px;
+	margin-left: -10px;
+}
+.top_bar_good2 .put_info2 a.weixin{
+	background-color:rgb(169,169,169);
+	width: 60px;
+	height: 40px;
+	display: block;
+	margin-top: -2px;
+	margin-left: -10px;
+}
+.top_bar_user .top_bar_good1:hover div.put_info{
+	display: block;
+}
+.top_bar_user .top_bar_good2:hover{
+	background: #000000;
+}
+.top_bar_user div.put_info2{
+	display: none;
+	margin-left: 5px;
+}
+.top_bar_user .top_bar_good2:hover div.put_info2{
+	display: block;
+}
+img.vegas_background{
+	width: 1356px;
+	height: 652px;
+	position: relative;
+}
+.loginbox{
+	width: 530px;
+	height: 235px;
+	position: absolute;
+	top: 28%;
+	right:28%;
+	border-radius: 4px;
+	font-size: 14px;
+	color: #333333;
+}
+
+.loginbox a.on,.loginbox a.off{
+	text-decoration: none;
+	width: 265px;
+	height: 50px;
+	display: inline-block;
+	float: left;
+    background: rgba(0,0,0,.6);
+    color: #FFFFFF;
+    line-height: 50px;
+    height: 50px;
+	text-align: center;
+	font-size: 20px;
+} 
+.loginbox  a.on{
+	background: rgba(255,255,255,.8);
+	color: #333333;
+}
+.loginbox .loginbox_c{
+	width: 530px;
+	height: 185px;
+	background: rgba(255,255,255,.8);
+	color: #333333;
+	overflow: hidden;
+}
+.loginbox_c div.loginbox_l{
+	width: 341px;
+	height: 112px;
+	margin-top: 30px;
+	border-right: 1px solid #CCCCCC;
+	float: left;
+}
+.loginbox_c div.loginbox_l .loginbox_l_logo{
+	width: 220px;
+	height: 60px;
+	margin: 10px;
+	margin-top: 20px;
+}
+.loginbox_c div.loginbox_l .loginbox_l_info{
+	margin-left:20px;
+	font-size: 14px;
+    color: #333;
+}
+.loginbox_c div.loginbox_l .loginbox_l_logo a{
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	margin: 5px;
+	margin-left:33px;
+}
+.loginbox_c div.loginbox_l .loginbox_l_logo a{
+	background: rgba(0,0,0,0) url(//static.meishichina.com/v6/img/zhen/ix2.png?v=2) no-repeat scroll 0 0/auto 30px;
+	
+}
+.loginbox_c div.loginbox_l .loginbox_l_logo a.a1{
+	background-position: -90px 0;
+}
+.loginbox_c div.loginbox_l .loginbox_l_logo a.a2{
+	background-position: -150px 0;
+}
+.loginbox_c div.loginbox_l .loginbox_l_logo a.a3{
+	background-position: -60px 0;
+}
+div.loginbox_l  span.logo_span1{
+	display: inline-block;
+	margin-left: 36px
+}
+div.loginbox_l  span.logo_span2,div.loginbox_l  span.logo_span3{
+	display: inline-block;
+	margin-left: 45px;
+}
+.loginbox_c .loginbox_r{
+	width: 165px;
+	height: 145px;
+	float: left;
+	margin: 10px;
+}
+.loginbox_c .loginbox_r img{
+	width: 110px;
+	height: 110px;
+	margin: 18px 28px;
+}
+.loginbox_c .loginbox_r span.loginbox_r_info{
+	margin-top: -20px;
+	display: block;
+	margin-left: 13px;
+}
+.loginbox_c1{
+	width: 530px;
+	height: 250px;
+	background: rgba(255,255,255,.8);
+	color: #333333;
+	overflow: hidden;
+	display: none;
+}
+.loginbox_c1 div.loginbox_l1{
+	width: 300px;
+	height: 154px;
+	border-right: 1px solid #999;
+	margin-top: 20px;
+	padding: 20px;
+	float: left;
+}
+.loginbox_c1 div.loginbox_l1 ul.mform_r{
+	width: 298px;
+	height: 65px;
+	border: 1px solid #999;
+	display: block;
+	border-radius: 4px;
+	list-style-type: none;
+}
+.loginbox_c1 div.loginbox_l1 li{
+	width: 298px;
+	height: 33px;
+	line-height: 33px;
+	border-bottom: 1px solid #999;
+}
+.loginbox_c1 div.loginbox_l1 li.li-on{
+	border-bottom:none;
+}
+.loginbox_c1 div.loginbox_l1 li input{
+	width: 190px;
+	font-size: 14px;
+	outline: none;
+	background: rgba(0,0,0,0);
+	border: none;
+	resize: none;
+}
+.loginbox_l1 p.clear{
+	width: 300px;
+	height: 22px;
+	padding: 10px 0;
+}
+.loginbox_l1 p.clear a{
+	float: right;
+	display: inline-block;
+	border-bottom: 1px solid #333;
+	color: #333333;
+}
+.loginbox_l1 input.btn{
+	width: 300px;
+	height: 40px;
+	line-height: 40px;
+	background: #FF6767;
+	color: #FFFFFF;
+	font-size: 18px;
+	margin-top: 5px;
+	border: none;
+	cursor: pointer;
+}
+.loginbox_r1{
+	width: 165px;
+	height: 190px;
+	float: left;
+	margin: 10px;
+	text-align: center;
+}
+.loginbox_r1 .loginbox_r1_code{
+	width: 110px;
+	height: 110px;
+	margin-top: 10px;
+}
+.loginbox_r1 span.loginbox_r1_span{
+	display: block;
+}
+.loginbox_r1 a{
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	margin: 5px;
+	background: rgba(0,0,0,0) url(//static.meishichina.com/v6/img/zhen/ix2.png?v=2) no-repeat scroll 0 0/auto 30px;
+}
+.loginbox_r1 a.loginbox_r1_a1{
+	background-position: -90px 0;
+}
+.loginbox_r1 a.loginbox_r1_a2{
+	background-position: -150px 0;
+}
+.loginbox_r1 a.loginbox_r1_a3{
+	background-position: -60px 0;
+}
+.loginbox a.on:focus{
+	background: rgba(0,0,0,.6);
+	color:#fff ;
+}
+.loginbox a.on:focus ~ a.off{
+	background: rgba(255,255,255,.8);
+	color:#333333 ;
+}
+.loginbox a.on:hover{
+	color: #FF6767;
+	text-decoration: underline;
+}
+.loginbox a.off:focus{
+	background: rgba(0,0,0,.6);
+	color:#fff ;
+}
+.loginbox a.off:focus ~ a.on{
+	background: rgba(255,255,255,.8);
+	color:#333333;
+	text-decoration:underline;
+}
+.loginbox a.off:hover{
+	color: #FF6767;
+	text-decoration: underline;
+}
+
+.loginbox a.off:focus ~ .loginbox_c1{
+	display: block;
+}
+.loginbox a.off:focus ~ .loginbox_c{
+	display: none;
+}
+.loginbox a.on:focus ~ .loginbox_c{
+	display: block;
+}
